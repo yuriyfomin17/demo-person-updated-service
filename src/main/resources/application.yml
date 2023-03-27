@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: person-update-service
+  cloud:
+    stream:
+      bindings:
+        personUpdatedEventConsumer-in-0:
+          destination: persons-topic
+          group: persons-event-queue
